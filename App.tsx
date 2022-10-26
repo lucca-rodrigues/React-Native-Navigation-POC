@@ -18,8 +18,8 @@ export default function App() {
       <NavigationContainer>
         <Drawer.Navigator screenOptions={{ headerShown: false }}>
           {/* <Drawer.Screen name="HomeDrawer" component={BottomNavigator} /> */}
-          {/* <Drawer.Screen name="Login" component={Login} /> */}
-          <Drawer.Screen name="HomeDrawer" component={StackNavigator} />
+          {/* <Drawer.Screen name="Home" component={Login} /> */}
+          <Drawer.Screen name="Home" component={StackNavigator} />
           {/* <Drawer.Screen name="Settings" component={BottomTabsNavigator} /> */}
         </Drawer.Navigator>
       </NavigationContainer>

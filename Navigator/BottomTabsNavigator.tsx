@@ -1,12 +1,33 @@
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
+
 import { HomeScreen, SettingsScreen } from "../Screens";
 import Icon from "react-native-vector-icons/FontAwesome5";
-import { Text } from "react-native";
-import { HomeNavigation } from "./StackNavigator";
+import { Text, View } from "react-native";
+// import { HomeNavigation } from "./StackNavigator";
+
+const Stack = createNativeStackNavigator();
+const Tab = createBottomTabNavigator();
+
+function HomeNavigation({ navigation }: any) {
+  return (
+    <Stack.Navigator
+      screenOptions={{
+        headerShown: true,
+        title: "Tela Home",
+        headerLeft: () => (
+          <View style={{ margin: 10 }}>
+            <Icon name="bars" size={25} color={"#000"} onPress={() => navigation.openDrawer()} />
+          </View>
+        ),
+      }}
+    >
+      <Stack.Screen name="Home" component={HomeScreen} />
+    </Stack.Navigator>
+  );
+}
 
 export function BottomTabsNavigator() {
-  const Tab = createBottomTabNavigator();
-
   return (
     <Tab.Navigator
       screenOptions={{
