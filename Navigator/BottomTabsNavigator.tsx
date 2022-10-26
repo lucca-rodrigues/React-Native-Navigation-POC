@@ -14,7 +14,7 @@ function HomeNavigation({ navigation }: any) {
     <Stack.Navigator
       screenOptions={{
         headerShown: true,
-        title: "Tela Home",
+        title: "Home",
         headerLeft: () => (
           <View style={{ margin: 10 }}>
             <Icon name="bars" size={25} color={"#000"} onPress={() => navigation.openDrawer()} />
