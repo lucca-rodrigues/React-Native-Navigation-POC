@@ -2,6 +2,7 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { HomeScreen, SettingsScreen } from "../Screens";
 import Icon from "react-native-vector-icons/FontAwesome5";
 import { Text } from "react-native";
+import { HomeNavigation } from "./StackNavigator";
 
 export function BottomTabsNavigator() {
   const Tab = createBottomTabNavigator();
@@ -9,7 +10,7 @@ export function BottomTabsNavigator() {
   return (
     <Tab.Navigator
       screenOptions={{
-        headerShown: true,
+        headerShown: false,
         unmountOnBlur: false,
         tabBarShowLabel: false,
         tabBarStyle: { height: 100 },
@@ -19,7 +20,7 @@ export function BottomTabsNavigator() {
       <Tab.Screen name="SettingsTab" component={SettingsScreen} /> */}
       <Tab.Screen
         name="HomeTab"
-        component={HomeScreen}
+        component={HomeNavigation}
         options={{
           tabBarIcon: ({ focused }) => (
             <>

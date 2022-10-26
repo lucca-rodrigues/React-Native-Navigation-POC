@@ -3,7 +3,7 @@ import { SafeAreaProvider } from "react-native-safe-area-context";
 
 import * as React from "react";
 import { NavigationContainer } from "@react-navigation/native";
-import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
+
 import { createDrawerNavigator } from "@react-navigation/drawer";
 import { HomeScreen, Login, SettingsScreen } from "./Screens";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
