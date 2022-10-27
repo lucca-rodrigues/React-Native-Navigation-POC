@@ -27,6 +27,24 @@ function HomeNavigation({ navigation }: any) {
   );
 }
 
+function SettingsNavigation({ navigation }: any) {
+  return (
+    <Stack.Navigator
+      screenOptions={{
+        headerShown: true,
+        title: "Settings",
+        headerLeft: () => (
+          <View style={{ margin: 10 }}>
+            <Icon name="bars" size={25} color={"#000"} onPress={() => navigation.openDrawer()} />
+          </View>
+        ),
+      }}
+    >
+      <Stack.Screen name="Settings" component={SettingsScreen} />
+    </Stack.Navigator>
+  );
+}
+
 export function BottomTabsNavigator() {
   return (
     <Tab.Navigator
@@ -64,7 +82,7 @@ export function BottomTabsNavigator() {
       />
       <Tab.Screen
         name="SettingsTab"
-        component={SettingsScreen}
+        component={SettingsNavigation}
         options={{
           tabBarIcon: ({ focused }) => (
             <>
@@ -78,8 +96,7 @@ export function BottomTabsNavigator() {
                   textAlign: "center",
                 }}
               >
-                {/* Texto Aqui */}
-                Config
+                Settings
               </Text>
             </>
           ),

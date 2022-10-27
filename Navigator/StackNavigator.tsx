@@ -13,21 +13,3 @@ export function StackNavigator() {
     </Stack.Navigator>
   );
 }
-
-// export function HomeNavigation({ navigation }: any) {
-//   return (
-//     <Stack.Navigator
-//       screenOptions={{
-//         headerShown: true,
-//         title: "Home",
-//         headerLeft: () => (
-//           <View style={{ margin: 10 }}>
-//             <Icon name="bars" size={25} color={"#000"} onPress={() => navigation.openDrawer()} />
-//           </View>
-//         ),
-//       }}
-//     >
-//       <Stack.Screen name="Home" component={HomeScreen} />
-//     </Stack.Navigator>
-//   );
-// }
