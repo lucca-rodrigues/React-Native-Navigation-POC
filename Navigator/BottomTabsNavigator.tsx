@@ -55,8 +55,6 @@ export function BottomTabsNavigator() {
         tabBarStyle: { height: 100 },
       }}
     >
-      {/* <Tab.Screen name="HomeTab" component={HomeScreen} />
-      <Tab.Screen name="SettingsTab" component={SettingsScreen} /> */}
       <Tab.Screen
         name="HomeTab"
         component={HomeNavigation}
