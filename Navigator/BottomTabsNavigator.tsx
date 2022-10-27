@@ -1,13 +1,7 @@
-import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import { createNativeStackNavigator } from "@react-navigation/native-stack";
-
 import { HomeScreen, SettingsScreen } from "../Screens";
 import Icon from "react-native-vector-icons/FontAwesome5";
 import { Text, View } from "react-native";
-// import { HomeNavigation } from "./StackNavigator";
-
-const Stack = createNativeStackNavigator();
-const Tab = createBottomTabNavigator();
+import { Stack, Tab } from ".";
 
 function HomeNavigation({ navigation }: any) {
   return (
@@ -37,8 +31,6 @@ export function BottomTabsNavigator() {
         tabBarStyle: { height: 100 },
       }}
     >
-      {/* <Tab.Screen name="HomeTab" component={HomeScreen} />
-      <Tab.Screen name="SettingsTab" component={SettingsScreen} /> */}
       <Tab.Screen
         name="HomeTab"
         component={HomeNavigation}
@@ -55,7 +47,6 @@ export function BottomTabsNavigator() {
                   textAlign: "center",
                 }}
               >
-                {/* Texto Aqui */}
                 Home
               </Text>
             </>
@@ -78,7 +69,6 @@ export function BottomTabsNavigator() {
                   textAlign: "center",
                 }}
               >
-                {/* Texto Aqui */}
                 Config
               </Text>
             </>
