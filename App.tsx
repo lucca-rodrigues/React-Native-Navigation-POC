@@ -6,6 +6,7 @@ import { NavigationContainer } from "@react-navigation/native";
 
 import { createDrawerNavigator } from "@react-navigation/drawer";
 import { StackNavigator } from "./Navigator/StackNavigator";
+import { Login } from "./Screens";
 
 const Drawer = createDrawerNavigator();
 
@@ -14,6 +15,7 @@ export default function App() {
     <SafeAreaProvider>
       <NavigationContainer>
         <Drawer.Navigator screenOptions={{ headerShown: false }}>
+          <Drawer.Screen name="Login" component={Login} />
           <Drawer.Screen name="Home" component={StackNavigator} />
         </Drawer.Navigator>
       </NavigationContainer>

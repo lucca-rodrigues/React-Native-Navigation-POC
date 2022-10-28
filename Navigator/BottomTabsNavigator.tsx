@@ -44,7 +44,7 @@ function SettingsNavigation({ navigation }: any) {
   );
 }
 
-export function BottomTabsNavigator() {
+export function BottomTabsNavigator({ route }: any) {
   return (
     <Tab.Navigator
       screenOptions={{
@@ -53,6 +53,7 @@ export function BottomTabsNavigator() {
         tabBarShowLabel: false,
         tabBarStyle: { height: 100 },
       }}
+      initialRouteName="HomeTab"
     >
       <Tab.Screen
         name="HomeTab"
