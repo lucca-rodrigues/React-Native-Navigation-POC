@@ -4,7 +4,6 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { HomeScreen, SettingsScreen } from "../Screens";
 import Icon from "react-native-vector-icons/FontAwesome5";
 import { Text, View } from "react-native";
-// import { HomeNavigation } from "./StackNavigator";
 
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -71,7 +70,6 @@ export function BottomTabsNavigator() {
                   textAlign: "center",
                 }}
               >
-                {/* Texto Aqui */}
                 Home
               </Text>
             </>

@@ -13,7 +13,6 @@ export function Routes() {
     <NavigationContainer>
       <Drawer.Navigator screenOptions={{ headerShown: false }}>
         <Drawer.Screen name="HomeDrawer" component={StackNavigator} />
-        {/* <Drawer.Screen name="HomeDrawer" component={BottomTabsNavigator} /> */}
       </Drawer.Navigator>
     </NavigationContainer>
   );

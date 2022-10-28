@@ -3,7 +3,7 @@ function Login({ navigation }: any) {
   return (
     <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
       <Text>Login Page!</Text>
-      <Button title="Fazer Login" onPress={() => navigation.navigate("Teste")} />
+      <Button title="Fazer Login" onPress={() => navigation.navigate("Tabs")} />
     </View>
   );
 }
