@@ -30,14 +30,13 @@
 Me acompanhe nas redes sociais:
 
 <p style="display:flex;">
-
-   <a href="https://github.com/lucca-rodrigues" target="_blank" >
+  <a target="_blank" href="https://github.com/lucca-rodrigues" >
     <img alt="Github" src="https://noticon-static.tammolo.com/dgggcrkxq/image/upload/v1567062204/noticon/ttan57gjenhvcrfq10yo.png" width="25px">
   </a>
-  <a href="https://www.instagram.com/_luccaoficial/" target="_blank" >
+  <a target="_blank" href="https://www.instagram.com/_luccaoficial/" style="margin:0px 10px;">
     <img alt="Instagram" src="https://noticon-static.tammolo.com/dgggcrkxq/image/upload/v1567008788/noticon/bqjhb6xvljt9viccy6lh.png" width="25px">
   </a>
-  <a href="https://www.linkedin.com/in/luccarodrigues/" target="_blank" >
+  <a target="_blank" href="https://www.linkedin.com/in/luccarodrigues/" >
     <img alt="Linkedin" src="https://noticon-static.tammolo.com/dgggcrkxq/image/upload/v1577931228/noticon/m7laxwx6s1m5thit9ldj.png" width="25px">
   </a>
 </p>
